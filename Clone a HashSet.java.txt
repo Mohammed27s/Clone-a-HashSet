@@ -1,0 +1,29 @@
+
+//Clone a HashSet
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Clone {
+
+    public static void main(String[] args){
+
+
+
+       HashSet<String> originalHash = new HashSet<>();
+
+        originalHash.add("Mohammed");
+        originalHash.add("John");
+        originalHash.add("Sam");
+
+        System.out.println("The original set : "+originalHash+"\n");
+
+        HashSet<String> cloneOriginalHash = (HashSet) originalHash.clone();
+
+        cloneOriginalHash.add("Shark");
+
+        System.out.println("The Shallow copy of the original set :  "+cloneOriginalHash);
+
+
+    }
+}
